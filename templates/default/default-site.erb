@@ -7,5 +7,8 @@ server {
   location / {
     root   <%= node['nginx']['default_root'] %>;
     index  index.html index.htm;
+    <% if node['nginx']['ssi'] -%>
+    ssi  on;
+    <% end -%>
   }
 }

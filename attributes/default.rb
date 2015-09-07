@@ -33,6 +33,7 @@ default['nginx']['log_dir_perm'] = '0750'
 default['nginx']['binary']       = '/usr/sbin/nginx'
 default['nginx']['default_root'] = '/var/www/nginx-default'
 default['nginx']['ulimit']       = '1024'
+default['nginx']['ssi']       = nil
 
 default['nginx']['pid'] = '/var/run/nginx.pid'
 
